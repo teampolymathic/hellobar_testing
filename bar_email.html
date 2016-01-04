@@ -2,7 +2,7 @@
   <head>
     <style>
       body { margin: 0; }
-      div {
+      .content div {
         margin: 0;
         width: 100%;
         padding: 5em 0;
@@ -17,11 +17,13 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
-    <div class="dark">CONTENT</div>
-    <div class="light">CONTENT</div>
-    <div class="dark">CONTENT</div>
-    <div class="light">CONTENT</div>
-    <div class="dark">CONTENT</div>
+    <div class="content">
+      <div class="dark">CONTENT</div>
+      <div class="light">CONTENT</div>
+      <div class="dark">CONTENT</div>
+      <div class="light">CONTENT</div>
+      <div class="dark">CONTENT</div>
+    </div>
     <script>
       $("div").click(function() {
         $(this).toggleClass("dark");
