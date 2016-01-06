@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      body { margin: 0; }
+      .content div {
+        margin: 0;
+        width: 100%;
+        padding: 5em 0;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      .dark { color:white; background-color:rgb(47, 47, 47); }
+      .light { color:black; background-color:rgb(232, 232, 232); }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="dark">CONTENT</div>
+      <div class="light">CONTENT</div>
+      <div class="dark">CONTENT</div>
+      <div class="light">CONTENT</div>
+      <div class="dark">CONTENT</div>
+    </div>
+    <script>
+      $("div").click(function() {
+        $(this).toggleClass("dark");
+        $(this).toggleClass("light");
+      });
+    </script>
+    <script src="//scripts-staging.hellobar.com.s3.amazonaws.com/e78e9706b538eb7c5d2718753198a8a4ec36448b.js" type="text/javascript" charset="utf-8" async="async"></script>
+  </body>
+</html>
